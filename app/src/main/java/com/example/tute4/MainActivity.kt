@@ -115,6 +115,7 @@ class MainActivity : AppCompatActivity() {
             displayAlert("Success", "You have successfully registered")
             count = 0
 
+            //clear the form after completion of the submitting
             edtStudentId.setText(null)
             (spnYear.selectedView as TextView).text = "1"
             (spnSemester.selectedView as TextView).text = "Semester 1"
