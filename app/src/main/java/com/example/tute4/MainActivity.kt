@@ -114,6 +114,12 @@ class MainActivity : AppCompatActivity() {
         if (count == 4) {
             displayAlert("Success", "You have successfully registered")
             count = 0
+
+            edtStudentId.setText(null)
+            (spnYear.selectedView as TextView).text = "1"
+            (spnSemester.selectedView as TextView).text = "Semester 1"
+            cbAgree.isChecked = false
+
         } else
             count = 0
     }
